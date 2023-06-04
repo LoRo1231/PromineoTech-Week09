@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take A Hike</title>
+    <script src="jquery/jquery.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="navbarNavDropdown" aria-controle="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- code above is creating the difference bewteen the expanded version & collapsed version of navigation bar-->
+            
+            <span class="navbar-toggler-icon"></span> <!-- span gives use the 3 dots on the menu-->
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html"> Home </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="moreinfo.html"> More Info </a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" data-bs-toggle="dropdown" aria-expanded="false"> Pick A Hike </a>
+                    <!-- needed data-bs-toggle to make drop down work -->
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="kentuckyhikes.html"> Kentucky </a>
+                        <a class="dropdown-item" href="tennesseehikes.html"> Tennessee </a> 
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- PHOTO CAROUSEL-->
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img id="carousel-photos" src="https://www.mycolorfulwanderings.com/wp-content/uploads/2021/05/John-Holder-Memorial-Trail-1024x768.jpg" class="d-block w-50" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-shadow">First slide label</h5>
+              <p class="text-shadow">Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img id="carousel-photos" src="https://www.21cmuseumhotels.com/lexington/wp-content/uploads/sites/10/2020/10/kentucky-tourism-daniel-boone-forest.jpg" class="d-block w-50" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-shadow">Second slide label</h5>
+              <p class="text-shadow">Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img id="carousel-photos" src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvMjIzODA2NzYvY2M4MzQwYzgxMDZkMzhjZDQ3NGFjNTk4ZjZiOTM3ZjcuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjo1MDAsImhlaWdodCI6NTAwLCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=" class="d-block w-50" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-shadow">Third slide label</h5>
+              <p class="text-shadow">Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="text-shadow">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon text" aria-hidden="true"></span>
+          <span class="text-shadow">Next</span>
+        </button>
+      </div>
+
+
+      
+<div class="container text-center text-dark paragraph-text">
+
+    Check out who's been hiking & where in My Old Kentucky Home! Click the links associated with the hiker's check-in
+    to learn more about that area & trail.
+
+</div>
+
+
+
+
+    <!-- HIKES TABLE -->
+
+<div class="container">
+    <table class="table table-hover table-dark" id="spacing">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Trail Hiked</th>
+            <th scope="col">Date Hiked</th>
+            <th scope="col">Would Return?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Logan</td>
+            <td>Robertson</td>
+            <td> <a href="https://www.alltrails.com/trail/us/kentucky/natural-arch-loop"> Natural Arch Loop </a></td>
+            <td>06/25/2022</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Hannah</td>
+            <td>Duckett</td>
+            <td> <a href="https://www.alltrails.com/trail/us/kentucky/echo-river-spring-trail--3"> Echo River Springs Trail </a></td>
+            <td>05/13/2018</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Megan</td>
+            <td>Folio</td>
+            <td> <a href="https://www.alltrails.com/trail/us/kentucky/cedar-sink-trail"> Cedar Sink Trail </a></td>
+            <td>04/12/2023</td>
+            <td>Yes</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+
+
+    <footer class="text-center text-lg-start bg-dark mt-5">
+        <div class="container d-flex justify-content-center py-5">
+         
+        </div>
+    </footer>
+    
+    
+            
+        </body>
+        </html>

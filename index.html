@@ -1,0 +1,126 @@
+<!-- Create a new website using HTML and Bootstrap. The website must include the following:
+	•	At least 2 pages.
+	•	A Bootstrap navbar, table, and form.
+	•	Bootstrap grid used throughout to format elements
+	•	Elements should stack vertically when the window is small-->
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Take A Hike</title>
+        <script src="jquery/jquery.js"></script>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="stylesheet.css">
+
+    </head>
+
+    <body>
+
+    <!-- NAVBAR -->
+
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html"> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                data-target="navbarNavDropdown" aria-controle="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- code above is creating the difference bewteen the expanded version & collapsed version of navigation bar-->
+                
+                <span class="navbar-toggler-icon"></span> <!-- span gives use the 3 dots on the menu-->
+    
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html"> Home </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="moreinfo.html"> More Info </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" data-bs-toggle="dropdown" aria-expanded="false"> Pick A Hike </a>
+                        <!-- needed data-bs-toggle to make drop down work -->
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="kentuckyhikes.html"> Kentucky </a>
+                            <a class="dropdown-item" href="tennesseehikes.html"> Tennessee </a> 
+                        </div>
+                    </li>
+    
+                </ul>
+            </div>
+        </nav>
+
+
+<!-- IMAGE -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-1">
+           
+        </div>
+
+        <div class="col-10">
+            <img class="container-fluid" id="photo-box" src="background.jpg">
+        </div> <!-- image not filling the container space -->
+
+        <div class="col-1" >
+            
+        </div>
+
+    </div>
+   
+</div>
+
+<!-- CARDS -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+        <div class="card">
+            <div class="card-body text-center">
+            <h5 class="card-title">Ramsey Cascades Trail</h5>
+            <p class="card-text" >Ramsey Cascades is the tallest waterfall in the park and one of the most spectacular. Water drops 100 feet over rock outcroppings and collects in a small pool.</p>
+            <a href="https://www.alltrails.com/trail/us/tennessee/ramsey-cascades-trail" class="btn btn-primary">See Map</a>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-4">
+        <div class="card">
+            <div class="card-body text-center">
+            <h5 class="card-title">North Fork Laurel Woods Trail</h5>
+            <p class="card-text">Explore this 6.1-mile out-and-back trail near Joelton, Tennessee. Generally considered a moderately challenging route, it takes an average of 2 h 22 min to complete.</p>
+            <a href="https://www.alltrails.com/trail/us/tennessee/north-fork-laurel-woods-trail" class="btn btn-primary">See Map</a>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+            <div class="card-body text-center">
+                <h5 class="card-title">Natural Arch Loop Trail</h5>
+                <p class="card-text">he trail passes two scenic overlooks. At the arch, you may climb the steps to the arch and continue along a dirt pathway that loops around the northwest end of the arch.</p>
+                <a href="https://www.alltrails.com/trail/us/kentucky/natural-arch-loop" class="btn btn-primary">See Map</a>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="text-center text-lg-start bg-dark mt-5">
+    <div class="container d-flex justify-content-center py-5">
+     
+    </div>
+</footer>
+
+
+        
+    </body>
+    </html>

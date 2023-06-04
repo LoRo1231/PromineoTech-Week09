@@ -1,0 +1,52 @@
+body{
+    background-color: #C9F5D9
+}
+
+#photo-box{
+    border-style: solid;
+    border-color: white;
+    border-width: 10px;
+    margin: 40px;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+#spacing{
+    margin-top: 60px;
+}
+
+
+#carousel-photos{
+    border-style: solid;
+    border-color: #414141;
+    border-width: 10px;
+    margin-top: 30px;
+}
+
+.carousel-inner img{
+    margin: auto;
+}
+
+.text-shadow{
+    text-shadow: 2px 2px 5px black;
+}
+
+.paragraph-text{
+    margin-top: 30px;
+    font-weight: 800;
+    font-style: bold;
+    font-size: x-large;
+}
+
+#button-margin{
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;   /* Height of the footer */
+ }

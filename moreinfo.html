@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take A Hike</title>
+    <script src="jquery/jquery.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="navbarNavDropdown" aria-controle="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- code above is creating the difference bewteen the expanded version & collapsed version of navigation bar-->
+            
+            <span class="navbar-toggler-icon"></span> <!-- span gives use the 3 dots on the menu-->
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html"> Home </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="moreinfo.html"> More Info </a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" data-bs-toggle="dropdown" aria-expanded="false"> Pick A Hike </a>
+                    <!-- needed data-bs-toggle to make drop down work -->
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="kentuckyhikes.html"> Kentucky </a>
+                        <a class="dropdown-item" href="tennesseehikes.html"> Tennessee </a> 
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+<div class="container text-center text-dark paragraph-text" id="spacing">
+
+    Want more info on the best places to hike across the US? Fill out the information below & we'll be in touch!
+
+</div>
+
+    <!-- FORM -->
+
+    <form id="spacing">
+        <div class="form-group container">
+          <label for="exampleInputEmail1">First & Last Name</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="enter full name here">
+        </div>
+        <div class="form-group container">
+          <label for="exampleInputPassword1">Email Address</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="enter email address here">
+        </div>
+        <div class="form-check container">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Keep Me Updated on Trail Closures & Other News!</label>
+        </div>
+        <button type="submit" class="btn btn-primary" id="button-margin">Submit</button>
+      </form>
+
+
+
+    <footer id="footer" class="text-center text-lg-start bg-dark mt-5">
+        <div class="container d-flex justify-content-center py-5">
+         
+        </div>
+    </footer>
+    
+    
+            
+        </body>
+        </html>
